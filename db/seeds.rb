@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Deletando matérias primas..."
+RawMaterial.delete_all
+
+puts "Criando matérias primas..."
+RawMaterial.create!(name: "Ferro", quantity: 40)
+RawMaterial.create!(name: "Parafuso", quantity: 400)
+RawMaterial.create!(name: "Aço", quantity: 50)
+RawMaterial.create!(name: "Rosca", quantity: 300)
